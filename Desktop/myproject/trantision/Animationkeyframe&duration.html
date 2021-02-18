@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation KeyFrame</title>
+        <style>
+            .container{
+                overflow: hidden;
+                height: 300px;
+            }
+            @keyframes slidein{
+                from{
+                    margin-left: 100%;
+                    color: red;
+                    transform: skew(20deg);
+                }
+               
+                to{
+                    margin-left: 0%;
+                    color: orange;
+                    transform: scale(2);
+                }
+            }
+            h2{
+                animation-name: slidein;
+                animation-duration: 15s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Akshay Deshmukh</h2>
+        </div>
+    </body>
+</html>

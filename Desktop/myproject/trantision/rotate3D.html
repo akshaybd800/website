@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rotate 3D</title>
+        <style>
+            .container{
+                height: 150px;
+                width: 150px;
+                border: 2px solid darkcyan;
+                background-color: darkmagenta;
+                margin: 20px;
+                perspective: 100px;
+            }
+            .transformPositive{
+                transform: rotate3d(0,1,0,45deg);
+                
+            }
+            .transformNegative{
+                transform: rotate3d(0,1,0,-45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../images/mob1.jpg" height="100" width="100">
+        </div>
+        <div class="container">
+            <img class="transformPositive" border="3" src="../images/mob1.jpg" height="100" width="100">
+            <img class="transformNegative" border="3" src="../images/mob1.jpg" height="100" width="100">
+        </div>
+    </body>
+</html>

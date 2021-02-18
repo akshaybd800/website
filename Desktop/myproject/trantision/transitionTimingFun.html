@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition Timing Function</title>
+        <style>
+            div{
+                width: 100px;
+                height: 50px;
+                margin-top: 20px;
+                background-color: darkcyan;
+                color: white;
+                font-size: 2em;
+                font-family: Arial;
+                transition: width 2s
+            }
+            div:hover{
+                width: 400px;
+            }
+            #linear{
+                transition-timing-function: linear;
+            }
+            #ease{
+                transition-timing-function: ease;
+            }
+            #easein{
+                transition-timing-function: ease-in;
+            }
+            #easeout{
+                transition-timing-function: ease-out;
+            }
+            #easeio{
+                transition-timing-function: ease-in-out;
+            }
+            #cubic{
+                transition-timing-function: cubic-bezier();
+            }
+            #steps{
+                transition-timing-function: steps();
+            }
+            #start{
+                transition-timing-function: start;
+            }
+            #end{
+                transition-timing-function: end;
+            }
+        </style>
+    </head>
+    <body>
+        <body>
+            <div id="linear">linear</div>
+            <div id="ease">Ease</div>
+            <div id="easein">Ease-In</div>
+            <div id="easeout">Ease-Out</div>
+            <div id="easeio">Ease-In-Out</div>
+            <div id="cubic">Cubic-Beizer</div>
+            <div id="steps">Steps</div>
+            <div id="start">Start</div>
+            <div id="end">End</div>
+        </body>
+    </body>
+</html>
