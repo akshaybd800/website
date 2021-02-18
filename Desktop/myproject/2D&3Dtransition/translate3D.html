@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Translate 3D</title>
+        <style>
+            .container{
+                height: 150px;
+                width: 150px;
+                background-color: red;
+                border: 2px solid darkcyan;
+                margin: 20px;
+                perspective: 300px;
+            }
+            .transformEffect{
+                transform: translate3d(50px,50px,100px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../images/earpod.jpg" height="100" width="100">
+        </div>
+        <div class="container">
+            <img class="transformEffect" border="4" src="../images/earpod.jpg" height="100" width="100">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation Iteration Count</title>
+        <style>
+            .container{
+              height: 300px;
+                overflow: hidden;
+            }
+            @keyframes itear{
+                from{
+                    margin-left: 90%;
+                  
+                }
+                to{
+                    margin-left: 0%;
+                    
+                }
+            }
+            img{
+                animation-name: itear;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-direction: alternate;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../images/speaker.jpg" height="100" width="100">
+        </div>
+    </body>
+</html>
