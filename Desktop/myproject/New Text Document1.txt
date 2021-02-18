@@ -1,0 +1,176 @@
+<div>
+    <img src="../../../car.jpg">
+</div>
+
+<div>
+    <label>Name</label>
+    <div>
+    <input type="text" minlength="4" required>
+    </div>
+</div>
+  
+<div>
+    <label>Last Name</label>
+    <div>
+    <input type="text" minlength="4" required>
+    </div>
+  </div>
+  
+  <div>
+    <label>DOB</label>
+    <div>
+    <input type="date" required>
+    </div>
+  </div>
+  
+  <div>
+  <label>Gender</label>
+  <div>
+      <input type="radio" name="Gender" value="male">Male
+      <input type="radio" name="Gender" value="female">Female
+    </div>
+  </div>
+  
+  <div>
+    <label>Address</label>
+    <div>
+    <input type="textarea" required>
+    </div>
+  </div>
+  
+  <div>
+  <div>
+    <label>Hobbies</label>
+    <div>
+    <input type="checkbox" value="Cricket">Cricket
+    <input type="checkbox" value="Football">Football
+    <input type="checkbox" value="Kho-Kho">Kho-Kho
+    <input type="checkbox" value="Dancing">Dancing
+    </div>
+  </div>
+  
+  <div>
+    <label>Country</label>
+    <div>
+    <select >
+        <option value="select">Select</option>
+      <option value="ind">India</option>
+      <option value="aus">Australia</option>
+      <option value="jap">Japan</option>
+      <option value="ame">America</option>
+    </select>
+    </div>
+  </div>
+  
+  <div>
+    <label>States</label>
+    <div>
+    <select name="" id="">
+      <option value="mh">Maharashtra</option>
+      <option value="ts">Telegana</option>
+      <option value="ud">Udisha</option>
+      <option value="as">Aasam</option>
+    </select>
+    </div>
+  </div>
+  
+  <div>
+    <label for="">City</label>
+    <div>
+    <select name="" id="">
+      <option value="nsk">Nashik</option>
+      <option value="mum">Mumbai</option>
+      <option value="aur">Aurangabad</option>
+      <option value="pune">Pune</option>
+    </select>
+    </div>
+  </div>
+  
+  <div>
+    <label for="">Pincode</label>
+    <div>
+    <input type="number" maxlength="6">
+    </div>
+  </div>
+  
+  <div>
+    <label for="">Mob no</label>
+    <div>
+    <input type="number"  maxlength="10">
+    </div>
+  </div>
+  
+  <div>
+    <input type="button" value="Sign Up" onclick="submit">
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************new **************************************/
+
+
+<div>
+<dl>
+  <dt>
+    <img src="../../../car.jpg" alt="">
+  </dt>
+  <dt>Name</dt>
+  <dd><input type="text" [(ngModel)]="Name" required minlength="4" maxlength="6"></dd>
+  <dt>Last Name</dt>
+  <dd><input type="text"[(ngModel)]="ln" required minlength="4" maxlength="6"></dd>
+  <dt>Date of Birth</dt>
+  <dd><input type="date" [(ngModel)]="dob"></dd>
+  <dt>Gender</dt>
+  <dd>
+    <input type="radio" name="Gender" value="male" [(ngModel)]="gen">Male
+    <input type="radio" name="Gender" value="female" [(ngModel)]="gen">Female
+  </dd>
+  <dt>City</dt>
+  <dd>
+    <select [(ngModel)]="city">
+      <option>Nashik</option>
+      <option>Pune</option>
+    </select>
+  </dd>
+  <dt>PinCode</dt>
+  <dd><input type="number" [(ngModel)]="pin" pattern="\+91[0-9]{6}" required></dd>
+  <dt>Mobile No</dt>
+  <dd><input type="number" [(ngModel)]="mob" pattern="\+91[0-9]{10}" required maxlength="10"></dd>
+</dl>
+</div>
+
+<div>
+  <h2>Register Details</h2>
+  <dl>
+    <dt>Name</dt>
+    <dd>{{Name}}</dd>
+    <dt>Last Name</dt>
+    <dd>{{ln}}</dd>
+    <dt>Date of Birth</dt>
+    <dd>{{dob}}</dd>
+    <dt>Gender</dt>
+    <dd>{{gen}}</dd>
+    <dt>City</dt>
+    <dd>{{city}}</dd>
+    <dt>PinCode</dt>
+    <dd>{{pin}}</dd>
+    <dt>Mobile No</dt>
+    <dd>{{mob}}</dd>
+  </dl>
+</div>
